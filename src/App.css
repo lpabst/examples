@@ -3,3 +3,8 @@
   position: relative;
 }
 
+.routeWrapper{
+  width: 100%;
+  position: relative;
+  padding: 50px 0px 100px 0px;
+}

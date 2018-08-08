@@ -1,0 +1,75 @@
+
+.exampleWrapper{
+    display: inline-block;
+    margin-right: 30px;
+    min-width: 80px;
+}
+
+.targetDiv{
+    width: 60px;
+    height: 60px;
+    border: 1px solid black;
+    background: rgb(64, 248, 162);
+    margin: 0 auto 15px auto;
+    transition: all 0.5s linear;
+    position: relative;
+    box-shadow: 1px 1px 2px black;
+}
+
+.targetDivWords{
+    width: 100%;
+    text-align: center;
+    font-size: 19px;
+    font-weight: bold;
+}
+
+.buttonDiv{
+    margin: 0 auto;
+    padding: 2px 4px;
+    border: 1px solid black;
+    box-shadow: 1px 1px 1px black;
+    background: #ccc;
+    cursor: pointer;
+    text-align: center;
+    border-radius: 3px;
+    transition-timing-function: cubic-bezier(0.1, 0.7, 1.0, 0.1);
+}
+
+.buttonDiv:active{
+    box-shadow: inset 1px 1px 1px black;
+}
+
+.popOverDiv{
+    height: 58px;
+    overflow: hidden;
+    transition: all 0.5s;
+    background: white;
+    position: absolute;
+    right: 0px;
+    top: 0px;
+    padding-top: 5px;
+}
+
+.fadeOutDiv{
+    width: 58px;
+    height: 58px;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    transition: all 0.5s;
+}
+
+@keyframes dangle{
+    0%{
+        transform: rotate(8deg);
+        transform-origin: 0% 0%;
+    }
+    50%{
+        transform: rotate(6deg);
+        transform-origin: 0% 0%;
+    }
+    100%{
+        transform: rotate(8deg);
+        transform-origin: 0% 0%;
+    }
+}
